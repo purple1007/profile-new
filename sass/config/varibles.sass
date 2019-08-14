@@ -1,0 +1,97 @@
+//------ varibles -------//
+
+// 以下為 sass 會使用到的變數
+
+// color
+$bg-white: #FCFBFA
+$bg-footer: #F5F4F4
+$bg-footer-copyright: rgba(11,11,11,0.4)
+
+$color-primary: #ff495d
+$color-white: #ffffff
+
+$text-gray: rgba(0,0,0,0.25)
+$text-black: #0B0B0B
+
+
+
+// 文字顏色
+.text-light
+	color: #BAC7CC
+.text-red
+	color: $color-primary
+.text-blue
+	color: #53A9FF
+
+// font name 字體名稱
+$main-font-en: 'Red Hat Display'
+$main-font-cn: 'Noto Sans TC'
+
+@mixin main-font-type
+	font-family: $main-font-en , $main-font-cn, 'Microsoft JhengHei', sans-serif
+
+// borer-radius
+$xs-radius: 3px
+$s-radius: 5px
+$m-radius: 10px
+$l-radius: 15px
+
+
+// hover 轉換時間
+@mixin trans-03s
+	transition: 0.3s ease
+
+@mixin trans-02s
+	transition: 0.2s ease
+
+
+
+
+
+
+// hover 效果
+@mixin hover-red
+	&:hover
+		+trans-03s
+		color: $color-primary
+
+@mixin hover-maincolor
+	&:hover
+		+trans-03s
+		color: $color-primary
+
+// hover+底線
+@mixin hover-border
+	position: relative
+	+trans-03s
+
+	&:before
+	  content: ""
+	  position: absolute
+	  display: inline-block
+	  width: 0px
+	  height: 2px
+	  background-color: $color-primary
+	  bottom: 0px
+	  left: auto
+	  right: 0px
+	  +trans-02s
+
+	&:hover
+	  color: $color-primary
+
+	&:hover:before
+	  content: ""
+	  width: 100%
+	  left: 0px
+	  right: auto
+	  bottom: 0px
+
+
+// img-shadows 圖片陰影
+
+@mixin img-shadows
+	filter: drop-shadow(0px 7px 20px rgba(0,0,0,0.2))
+
+
+

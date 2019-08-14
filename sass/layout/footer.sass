@@ -1,0 +1,65 @@
+/* ----- footer ----- */
+#footer
+    background-color: $bg-footer
+    padding-top: 100px
+    padding-bottom: 10px
+    .row
+        margin-bottom: 50px
+
+    .e-mail
+        font-size: 1.4rem
+        +trans-03s
+        &:hover
+            color: $color-primary
+    h1
+        position: relative
+        .line
+            position: absolute
+            width: 45px
+            height: 1px
+            top: 55%
+            margin-left: 5px
+            background-color: $text-black
+
+
+    ul
+        justify-content: space-between
+        flex-wrap: wrap
+
+        li
+
+            a
+                font-weight: 500
+                line-height: 1.4rem
+                border-bottom: 1px solid $text-black
+                +trans-03s
+                &:hover
+                    color: $color-primary
+                    border-bottom: 1px solid $color-primary
+
+
+    small
+        opacity: 0.5
+
+
+/* --------- RWD ---------- */
+@media (max-width: 576px)
+    #footer
+        padding-top: 70px
+        .col-md-6
+            margin-bottom: 10px
+        .col
+            text-align: center
+
+@media (max-width: 375px)
+    #footer
+        padding-bottom: 30px
+        ul
+            justify-content: flex-start
+            li
+                margin-right: 10px
+                margin-bottom: 5px
+        .row
+            margin-bottom: 30px
+
+

@@ -1,0 +1,135 @@
+extends layout.pug
+block content
+    .bg-line
+    section#banner
+        .container
+            .row.text-red.reveal_bottom
+                h1.col
+                    | Hi! I’m
+                    span  Debby.
+                    br
+                    | I’m a
+                    span  Graphic Designer &amp;  UI Designer.
+            .row.banner-tag.reveal_bottom
+                .col-lg-10
+                    ul
+                        li
+                            | Graphic Design
+                            span LOVER
+
+                        li
+                            | Adobe XD
+                            span LOVER
+
+                        li
+                            | UI Design
+                            span TESTER
+
+                        li
+                            | HTML
+                            span LEARNER
+
+                        li
+                            | SASS
+                            span LOVER
+
+                        li
+                            | Pug
+                            span LOVER
+
+                        li
+                            | JavaScript
+                            span LEARNER
+
+                        li
+                            | jQuery
+                            span LEARNER
+
+                        li
+                            | Git
+                            span USER
+
+
+    section#gallery
+        .container
+            .row.justify-content-center
+                .col-lg-8
+                    .title.reveal_bottom
+                        h1.text-red What I do
+                        p 從事網頁設計，喜歡設計、摸索 前端程式，喜歡設計後，在透過程式一步一步建構出畫面、動畫；覺得那是有趣、成就感的。
+
+            .row.justify-content-center.reveal_bottom
+                .col-lg-8
+                    .swiper-container.image-swiper
+                        .swiper-wrapper
+                            mixin work(num)
+                                .swiper-slide(style="background-image: url('img/work-"+num+".png')")
+                            +work(1)
+                            +work(2)
+                            +work(3)
+                            +work(4)
+                            +work(5)
+                            +work(6)
+                            //- .swiper-slide(style="background-image: url('img/work-1.png')")
+
+                            //- .swiper-slide(style="background-image: url('img/work-2.png')")
+
+                            //- .swiper-slide(style="background-image: url('img/work-3.png')")
+
+                        .swiper-pagination
+            .row.justify-content-center.reveal_bottom
+                .col-lg-8.d-flex
+                    .swiper-button
+                        .swiper-prev
+                            include ../img/arrow-left.svg
+
+                        .swiper-next
+                            include ../img/arrow-right.svg
+                    .see-more
+                        p See more...
+                        a(href="https://dailydesignfromdebby.tumblr.com/" target="_blank") Design
+                        a(href="https://debbyillustrations.tumblr.com/" target="_blank") Illustration
+
+    section#project
+        .container
+            .row
+                .col-lg-8.offset-lg-4.reveal_bottom
+                    .title
+                        h1.text-red What I do
+                        p 從事網頁設計，喜歡設計、摸索 前端程式，喜歡設計後，在透過程式一步一步建構出畫面、動畫；覺得那是有趣、成就感的。
+            .row
+                .col-md-6.col-12.reveal_bottom
+                    figure
+                        .cover(style="background-image: url('img/cover-1.jpg')")
+                        .row
+                            .col-lg-6.col-md-12.project-name
+                                h3.text-red Bread 網站開發
+                                p
+                                    | View
+                                    a(href="https://purple1007.github.io/bread/" target="_blank") Demo
+                            .col-lg-6.col-md-12
+                                p
+                                    | JavaScript / jQuery / CSS / HTML
+                                    br
+                                    | 開發重點：
+                                ul
+                                    li 使用 Sass
+                                    li 使用 jQuery 其它套件
+                                    li RWD 練習
+                                    li 不規則背景 及 Section 設計​
+
+
+                .col-md-6.col-12.reveal_bottom
+                     figure
+                        .cover(style="background-image: url('img/cover-2.jpg')")
+                        .row
+                            .col-lg-6.col-md-12.project-name
+                                h3.text-red Daily UI
+                                p
+                                    | View
+                                    a(href="http://dailydesignfromdebby.tumblr.com/" target="_blank") More
+                            .col-lg-6.col-md-12
+                                p 這一系列目前還正在進行的設計，盡量讓自己嘗試多方面的設計、元素，既然工作上太多限制，不如就在這上面自由一點。去定義自己覺得有趣、好看的設計吧！
+
+
+block page_js

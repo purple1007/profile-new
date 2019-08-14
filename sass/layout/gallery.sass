@@ -1,0 +1,63 @@
+/* ----- gallery ----- */
+#gallery
+    .image-swiper
+        margin-top: 50px
+        margin-bottom: 40px
+        width: 100%
+
+    .swiper-container
+        height: 500px
+
+        .swiper-slide
+            background-size: cover
+            background-position: center
+            background-repeat: no-repeat
+
+        .swiper-pagination-bullet-active
+            background-color: rgba(255,255,255,0.7)
+
+    .swiper-button
+        display: flex
+        margin-right: 40px
+
+
+        .swiper-prev
+            margin-right: 15px
+        .swiper-prev, .swiper-next
+            outline: none
+            cursor: pointer !important
+            +trans-03s
+
+            &:hover
+                svg#arrow-left, #arrow-right
+                    #Ellipse_1, #Path_6
+                        stroke: $color-primary
+
+    .see-more
+        p
+            color: $text-gray
+            line-height: inherit
+        a
+            font-weight: 700
+            margin-right: 30px
+            font-size: 1.3rem
+            border-bottom: 1px solid $text-black
+            line-height: 2rem
+            margin-top: 8px
+            +trans-03s
+            &:hover
+                color: $color-primary
+                border-bottom: 1px solid $color-primary
+
+
+/* --------- RWD ---------- */
+@media (max-width: 576px)
+    #gallery
+        .swiper-container
+            height: 350px
+
+@media (max-width: 375px)
+    #gallery
+        .image-swiper
+            margin-top: 30px
+            margin-bottom: 20px

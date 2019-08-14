@@ -1,0 +1,30 @@
+/* ----- nav ----- */
+nav
+    position: fixed
+    display: flex
+    padding-top: 25px
+    width: 100%
+    z-index: 3
+
+    .container
+        display: flex
+        justify-content: space-between
+
+    .navbar-brand
+        font-weight: 900
+        font-size: 1.4rem
+
+    ul
+        display: flex
+        li
+            margin-left: 20px
+            a
+                font-weight: 500
+                +hover-border
+
+
+/*--------rwd----------*/
+
+@media (max-width: 576px)
+    nav
+        padding-top: 15px
