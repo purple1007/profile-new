@@ -1,0 +1,34 @@
+section#gallery
+    .container
+        .row.justify-content-center
+            .col-lg-8
+                .title.reveal_bottom
+                    h1.text-red What I do
+                    p 從事網頁設計，喜歡設計、摸索 前端程式，喜歡設計後，在透過程式一步一步建構出畫面、動畫；覺得那是有趣、成就感的。
+
+        .row.justify-content-center.reveal_bottom
+            .col-lg-8
+                .swiper-container.image-swiper
+                    .swiper-wrapper
+                        mixin work(num)
+                            .swiper-slide(style="background-image: url('img/work-"+num+".png')")
+                        +work(1)
+                        +work(2)
+                        +work(3)
+                        +work(4)
+                        +work(5)
+                        +work(6)
+
+                    .swiper-pagination
+        .row.justify-content-center.reveal_bottom
+            .col-lg-8.d-flex
+                .swiper-button
+                    .swiper-prev
+                        include ../../img/arrow-left.svg
+
+                    .swiper-next
+                        include ../../img/arrow-right.svg
+                .see-more
+                    p See more...
+                    a(href="https://dailydesignfromdebby.tumblr.com/" target="_blank") Design
+                    a(href="https://debbyillustrations.tumblr.com/" target="_blank") Illustration
