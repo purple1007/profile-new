@@ -40,8 +40,8 @@ $('a[href*="#"]:not([href="#"])').click(function() {
         distance: '20px',
         scale:1,
         easing:'ease-in-out',
-        duration: 500,
-        viewFactor: 0.7
+        duration: 400,
+        viewFactor: 0.5
     });
     sr.reveal('.reveal_bottom', {
         origin:'bottom',
@@ -65,25 +65,20 @@ $('a[href*="#"]:not([href="#"])').click(function() {
     });
 
 ScrollReveal().reveal('.banner-tag li',{
-    interval: 400,
+    interval: 200,
     distance: '0px'
 });
 
 ScrollReveal().reveal('#project figure, #footer .col-md-6', {
-    interval: 500,
+    interval: 300,
     distance: '0px'}
             );
 
 
-// paroller
-// $('#project .cover').paroller({
-//   type: 'background',
-//   direction: 'vertical',
-//   factor: 0.1,
-// });
 
 $('.title, #banner .row').paroller({
   type: 'foreground',
   direction: 'vertical',
   factor: 0.1,
+  factorXs: 0,
 });
