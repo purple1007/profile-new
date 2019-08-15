@@ -79,6 +79,7 @@ ScrollReveal().reveal('#project figure, #footer .col-md-6', {
 $('.title, #banner .row').paroller({
   type: 'foreground',
   direction: 'vertical',
+  // factor: 0.1,
+  factorXs: 0.02,
   factor: 0.1,
-  factorXs: 0,
 });
