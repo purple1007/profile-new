@@ -2,12 +2,26 @@
 
 meta(charset="UTF-8")
 meta(name='viewport', content='width=device-width, initial-scale=1')
-title Debby
+title Debby | Graphic Designer &amp; UI Designer
+
+// structured-data
+script(type='application/ld+json').
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "creator": {
+        "@type": "Person",
+        "name": "Debby Lin"
+        },
+      "url": "https://www.debbyworks.com/",
+      "about": "Debby is a  Graphic Designer &amp; UI Designer, She also learning front-end development now, And try to create interesting motion &amp; design in website."
+    }
+
 
 //fb share
 meta(property='og:url', content='https://www.debbyworks.com/')
 meta(property='og:image', content='img/debbyworks-cover.jpg')
-meta(property='og:title', content='Debby')
+meta(property='og:title', content='Debby | Graphic Designer & UI Designer')
 meta(property='og:description', content='Debby is a  Graphic Designer & UI Designer, She also learning front-end development now, And try to create interesting motion & design in website.')
 meta(property='og:type', content='website')
 
@@ -42,5 +56,7 @@ script.
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'UA-71294699-1');
+
+//
 
 

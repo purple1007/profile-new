@@ -10,14 +10,18 @@ section#gallery
             .col-lg-8
                 .swiper-container.image-swiper
                     .swiper-wrapper
-                        mixin work(num)
-                            .swiper-slide(style="background-image: url('img/work-"+num+".png')")
-                        +work(1)
-                        +work(2)
-                        +work(3)
-                        +work(4)
-                        +work(5)
-                        +work(6)
+                        .swiper-slide
+                            img(src="img/debby_dailyUI_design-1.png", alt='Debby design | UI design')
+                        .swiper-slide
+                            img(src="img/debby_dailyUI_design-2.png", alt='Debby design | UI design')
+                        .swiper-slide
+                            img(src="img/debby_dailyUI_design-3.png", alt='Debby design | UI design')
+                        .swiper-slide
+                            img(src="img/debby_dailyUI_design-4.png", alt='Debby design | UI design')
+                        .swiper-slide
+                            img(src="img/debby_dailyUI_design-5.png", alt='Debby design | UI design')
+                        .swiper-slide
+                            img(src="img/debby_dailyUI_design-6.png", alt='Debby design | UI design')
 
                     .swiper-pagination
         .row.justify-content-center.reveal_bottom
@@ -30,5 +34,5 @@ section#gallery
                         include ../../img/arrow-right.svg
                 .see-more
                     p See more...
-                    a(href="https://dailydesignfromdebby.tumblr.com/" target="_blank") Design
-                    a(href="https://debbyillustrations.tumblr.com/" target="_blank") Illustration
+                    a(href="https://dailydesignfromdebby.tumblr.com/" target="_blank" rel="noopener noreferrer") Design
+                    a(href="https://debbyillustrations.tumblr.com/" target="_blank" rel="noopener noreferrer") Illustration

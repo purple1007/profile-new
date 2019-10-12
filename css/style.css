@@ -272,14 +272,23 @@ nav {
   margin-bottom: 40px;
   width: 100%; }
 
-#gallery .swiper-container {
-  height: 500px; }
-  #gallery .swiper-container .swiper-slide {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; }
-  #gallery .swiper-container .swiper-pagination-bullet-active {
-    background-color: rgba(255, 255, 255, 0.7); }
+#gallery .swiper-container .swiper-slide {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden; }
+  #gallery .swiper-container .swiper-slide img {
+    max-width: 100%; }
+
+#gallery .swiper-container .swiper-pagination-bullet-active {
+  background-color: rgba(255, 255, 255, 0.7); }
 
 #gallery .swiper-button {
   display: -webkit-box;
@@ -332,11 +341,11 @@ nav {
   #project figure {
     margin-top: 50px; }
     #project figure .cover {
-      height: 400px;
-      margin-bottom: 15px;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover; }
+      width: 100%;
+      overflow: hidden;
+      margin-bottom: 15px; }
+      #project figure .cover img {
+        max-width: 100%; }
     #project figure ul li {
       list-style: decimal;
       margin-left: 17px; }

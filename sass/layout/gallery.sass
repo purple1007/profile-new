@@ -6,12 +6,17 @@
         width: 100%
 
     .swiper-container
-        height: 500px
-
         .swiper-slide
-            background-size: cover
-            background-position: center
-            background-repeat: no-repeat
+            // height: 500px
+            width: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            overflow: hidden
+
+            img
+                max-width: 100%
+                // height: auto
 
         .swiper-pagination-bullet-active
             background-color: rgba(255,255,255,0.7)
