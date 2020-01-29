@@ -20,7 +20,27 @@ nav
             margin-left: 20px
             a
                 font-weight: 500
-                +hover-border
+                position: relative
+                +trans-03s
+                &:before
+                  content: ""
+                  position: absolute
+                  display: inline-block
+                  width: 0px
+                  height: 2px
+                  background-color: $color-primary
+                  bottom: 0px
+                  left: auto
+                  right: 0px
+                  +trans-02s
+                &:hover
+                  color: $color-primary
+                &:hover:before
+                  content: ""
+                  width: 100%
+                  left: 0px
+                  right: auto
+                  bottom: 0px
 
 
 /*--------rwd----------*/
