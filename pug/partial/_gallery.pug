@@ -1,31 +1,30 @@
 section#gallery
     .container
         .row.justify-content-center
-            .col-lg-8
+            .col-12.col-md-10.col-lg-9
                 .title.reveal_bottom
-                    h1.text-red What I do
-                    p 目前從事網頁設計，喜歡設計、摸索前端語言；喜歡設計後，再透過程式一步一步建構出畫面、動畫；覺得那是有趣、具有成就感的。
+                    h1.text-red About Me
+                    p Hi! I’m Debby. I’m a web designer and a UI designer.
+                    br
+                    p I have more than 5 years of experience in graphic design , and 2 years of experience in website design. I like creative colors and  layout. Using colors,typography and shapes to build different layouts is fascinating to me.
+                    br
+                    p
+                        |
+                        a.text-red(href="hhttps://dribbble.com/debby" target="_blank" rel="noopener noreferrer") Here
+                        |  you can check out more of my works and hope you like it!
+                    p If you have any question or just want to talk ,welcome to contactme through <a href="#footer" class="text-red">here</a> ! :)
 
         .row.justify-content-center.reveal_bottom
-            .col-lg-8
+            .col-12.col-md-10.col-lg-9
                 .swiper-container.image-swiper
                     .swiper-wrapper
-                        .swiper-slide
-                            img(src="img/debby_dailyUI_design-1.png", alt='Debby design | UI design')
-                        .swiper-slide
-                            img(src="img/debby_dailyUI_design-2.png", alt='Debby design | UI design')
-                        .swiper-slide
-                            img(src="img/debby_dailyUI_design-3.png", alt='Debby design | UI design')
-                        .swiper-slide
-                            img(src="img/debby_dailyUI_design-4.png", alt='Debby design | UI design')
-                        .swiper-slide
-                            img(src="img/debby_dailyUI_design-5.png", alt='Debby design | UI design')
-                        .swiper-slide
-                            img(src="img/debby_dailyUI_design-6.png", alt='Debby design | UI design')
-
-                    .swiper-pagination
+                        - var n = 1;
+                            while n < 10
+                                .swiper-slide
+                                    img(src='img/debby_dailyUI_design-'+ n++ +'.png', alt='Debby design | UI design')
+                .swiper-pagination.image-swiper-pagination
         .row.justify-content-center.reveal_bottom
-            .col-lg-8.d-flex
+            .col-12.col-md-10.col-lg-9.d-flex.mt-5
                 .swiper-button
                     .swiper-prev
                         include ../../img/arrow-left.svg
@@ -34,5 +33,4 @@ section#gallery
                         include ../../img/arrow-right.svg
                 .see-more
                     p See more...
-                    a(href="https://dailydesignfromdebby.tumblr.com/" target="_blank" rel="noopener noreferrer") Design
-                    a(href="https://debbyillustrations.tumblr.com/" target="_blank" rel="noopener noreferrer") Illustration
+                    a(href="hhttps://dribbble.com/debby" target="_blank" rel="noopener noreferrer") Works on dribbble

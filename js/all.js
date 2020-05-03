@@ -5,6 +5,7 @@
       loop: true,
       slidesPerView: 1,
       speed: 500,
+      autoplay: true,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -72,13 +73,3 @@ ScrollReveal().reveal('#project figure, #footer .col-md-6', {
     interval: 300,
     distance: '0px'}
             );
-
-
-
-$('.title, #banner .row').paroller({
-  type: 'foreground',
-  direction: 'vertical',
-  // factor: 0.1,
-  factorXs: 0.02,
-  factor: 0.1,
-});
