@@ -2,29 +2,35 @@
 #gallery
     .image-swiper
         margin-top: 50px
-        margin-bottom: 40px
+        margin-bottom: 20px
         width: 100%
+        height: 530px
 
     .swiper-container
         .swiper-slide
-            // height: 500px
             width: 100%
             display: flex
             justify-content: center
             align-items: center
-            overflow: hidden
 
             img
-                max-width: 100%
-                // height: auto
+                width: 100%
+                object-position: center
+                object-fit: cover
+                height: 100%
 
+    .image-swiper-pagination
+        position: relative
+        // padding-top: 10px
+        .swiper-pagination-bullet
+            margin: 0 5px
+            outline: none
         .swiper-pagination-bullet-active
-            background-color: rgba(255,255,255,0.7)
+            background-color: rgba(67, 64, 64, 0.7)
 
     .swiper-button
         display: flex
         margin-right: 40px
-
 
         .swiper-prev
             margin-right: 15px
@@ -54,13 +60,23 @@
 
 
 /* --------- RWD ---------- */
+@media (max-width: 991px)
+    #gallery
+        .image-swiper
+            height: 450px
+@media (max-width: 768px)
+    #gallery
+        .image-swiper
+            height: 420px
+
 @media (max-width: 576px)
     #gallery
-        .swiper-container
-            height: 350px
+        .image-swiper
+            height: 310px
 
 @media (max-width: 375px)
     #gallery
         .image-swiper
+            height: 250px
             margin-top: 30px
             margin-bottom: 20px

@@ -320,8 +320,9 @@ nav ul li a:hover:before {
 /* ----- gallery ----- */
 #gallery .image-swiper {
   margin-top: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   width: 100%;
+  height: 530px;
 }
 #gallery .swiper-container .swiper-slide {
   width: 100%;
@@ -334,13 +335,24 @@ nav ul li a:hover:before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow: hidden;
 }
 #gallery .swiper-container .swiper-slide img {
-  max-width: 100%;
+  width: 100%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
 }
-#gallery .swiper-container .swiper-pagination-bullet-active {
-  background-color: rgba(255, 255, 255, 0.7);
+#gallery .image-swiper-pagination {
+  position: relative;
+}
+#gallery .image-swiper-pagination .swiper-pagination-bullet {
+  margin: 0 5px;
+  outline: none;
+}
+#gallery .image-swiper-pagination .swiper-pagination-bullet-active {
+  background-color: rgba(67, 64, 64, 0.7);
 }
 #gallery .swiper-button {
   display: -webkit-box;
@@ -382,13 +394,24 @@ nav ul li a:hover:before {
 }
 
 /* --------- RWD ---------- */
+@media (max-width: 991px) {
+  #gallery .image-swiper {
+    height: 450px;
+  }
+}
+@media (max-width: 768px) {
+  #gallery .image-swiper {
+    height: 420px;
+  }
+}
 @media (max-width: 576px) {
-  #gallery .swiper-container {
-    height: 350px;
+  #gallery .image-swiper {
+    height: 310px;
   }
 }
 @media (max-width: 375px) {
   #gallery .image-swiper {
+    height: 250px;
     margin-top: 30px;
     margin-bottom: 20px;
   }
@@ -469,6 +492,7 @@ nav ul li a:hover:before {
   background-color: #F5F4F4;
   padding-top: 100px;
   padding-bottom: 10px;
+  margin-top: 150px;
 }
 #footer .row {
   margin-bottom: 50px;
