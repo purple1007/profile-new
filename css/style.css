@@ -527,6 +527,7 @@ nav ul li a:hover:before {
 #footer ul li a {
   font-weight: 500;
   line-height: 1.4rem;
+  margin-left: 0;
   border-bottom: 1px solid #0B0B0B;
   -webkit-transition: 0.3s ease;
   -o-transition: 0.3s ease;
@@ -542,19 +543,8 @@ nav ul li a:hover:before {
 
 /* --------- RWD ---------- */
 @media (max-width: 576px) {
-  #footer {
-    padding-top: 70px;
-  }
-  #footer .col-md-6 {
-    margin-bottom: 10px;
-  }
   #footer .col {
     text-align: center;
-  }
-}
-@media (max-width: 375px) {
-  #footer {
-    padding-bottom: 30px;
   }
   #footer ul {
     -webkit-box-pack: start;
@@ -562,10 +552,7 @@ nav ul li a:hover:before {
             justify-content: flex-start;
   }
   #footer ul li {
-    margin-right: 10px;
-    margin-bottom: 5px;
-  }
-  #footer .row {
-    margin-bottom: 30px;
+    margin-right: 18px;
+    margin-bottom: 10px;
   }
 }
