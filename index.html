@@ -17,7 +17,7 @@
           "@type": "Person",
           "name": "Debby Lin"
           },
-        "url": "https://www.debbyworks.com/",
+        "url": "https://www.debbylin.me/",
         "about": "Debby is a Web Designer &amp; UI Designer, She also learning front-end development now, And try to create interesting motion &amp; design in website."
       }
       
@@ -49,7 +49,14 @@
       gtag('config', 'UA-71294699-1');
       
     </script>
-    <!---->
+    <!-- GTM-->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-W7PPMG8');
+    </script>
   </head>
   <body>
     <!-- nav-->
@@ -60,9 +67,9 @@
       <div class="container"><a class="navbar-brand text-red" href="#top">Debby
           <div class="collapse navbar-collapse" id="navbarNav"></div></a>
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/debby.design/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-          <li class="nav-item"><a class="nav-link" href="https://dribbble.com/debby" target="_blank" rel="noopener noreferrer">Dribbble</a></li>
-          <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/debby.design/" target="_blank" rel="noopener noreferrer" data-event-category="Navigate" data-event-action="Instagram">Instagram</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://dribbble.com/debby" target="_blank" rel="noopener noreferrer" data-event-category="Navigate" data-event-action="Dribbble">Dribbble</a></li>
+          <li class="nav-item"><a class="nav-link" href="#footer" data-event-category="Navigate" data-event-action="Contact">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -97,8 +104,8 @@
               <h1 class="text-red">About Me</h1>
               <p>Hi! I’m Debby. I’m a web designer and a UI designer.</p><br/>
               <p>I have more than 5 years of experience in graphic design, and 2 years of experience in website design. I like creative colors and  layout. Using colors, typography and shapes to build different layouts is fascinating to me.</p><br/>
-              <p><a class="text-red" href="https://dribbble.com/debby" target="_blank" rel="noopener noreferrer">Here</a> you can check out more of my works and hope you like it!</p>
-              <p>If you have any question or just want to talk, welcome to contact me through <a href="#footer" class="text-red">here</a> ! :)</p>
+              <p><a class="text-red" href="https://dribbble.com/debby" target="_blank" rel="noopener noreferrer" data-event-category="AboutMeText" data-event-action="LearnMore" data-event-label="CheckWorks">Here</a> you can check out more of my works and hope you like it!</p>
+              <p>If you have any question or just want to talk, welcome to contact me through <a href="#footer" class="text-red" data-event-category='AboutMeText' data-event-action='Click' data-event-label='ContactMe'>here</a> ! :)</p>
             </div>
           </div>
         </div>
@@ -123,7 +130,7 @@
         <div class="row justify-content-center reveal_bottom">
           <div class="col-12 col-md-10 col-lg-9 d-flex mt-5">
             <div class="swiper-button">
-              <div class="swiper-prev"><svg id="arrow-left" data-name="Group 4" xmlns="http://www.w3.org/2000/svg" width="35.5" height="35.5" viewBox="0 0 35.5 35.5">
+              <div class="swiper-prev" data-event-category="Gellery" data-event-action="Click" data-event-label="Left"><svg id="arrow-left" data-name="Group 4" xmlns="http://www.w3.org/2000/svg" width="35.5" height="35.5" viewBox="0 0 35.5 35.5">
   <g id="Ellipse_1" data-name="Ellipse 1" fill="none" stroke="#707070" stroke-width="1">
     <circle cx="17.75" cy="17.75" r="17.75" stroke="none"/>
     <circle cx="17.75" cy="17.75" r="17.25" fill="none"/>
@@ -134,7 +141,7 @@
 </svg>
 
               </div>
-              <div class="swiper-next"><svg xmlns="http://www.w3.org/2000/svg" width="35.5" height="35.5" viewBox="0 0 35.5 35.5">
+              <div class="swiper-next" data-event-category="Gellery" data-event-action="Click" data-event-label="Right"><svg xmlns="http://www.w3.org/2000/svg" width="35.5" height="35.5" viewBox="0 0 35.5 35.5">
   <g id="arrow-right" data-name="Group 5" transform="translate(35.5 35.5) rotate(180)">
     <g id="Ellipse_1" data-name="Ellipse 1" fill="none" stroke="#707070" stroke-width="1">
       <circle cx="17.75" cy="17.75" r="17.75" stroke="none"/>
@@ -149,7 +156,7 @@
               </div>
             </div>
             <div class="see-more">
-              <p>See more...</p><a href="https://dribbble.com/debby" target="_blank" rel="noopener noreferrer">Works on dribbble</a>
+              <p>See more...</p><a href="https://dribbble.com/debby" target="_blank" rel="noopener noreferrer" data-event-category="Gellery" data-event-action="Click" data-event-label="Dribbble">Works on dribbble</a>
             </div>
           </div>
         </div>
@@ -162,17 +169,17 @@
       <div class="container">
         <div class="row">
           <div class="col-md-5 col-sm-12 reveal_bottom mb-5 mb-md-0">
-            <h1 class="text-red">Let's talk!</h1><a class="e-mail" href="mailto:info@debbylin.me" target="_blank" rel="noopener noreferrer">info@debbylin.me</a>
+            <h1 class="text-red">Let's talk!</h1><a class="e-mail" href="mailto:info@debbylin.me" target="_blank" rel="noopener noreferrer" data-event-category="Footer" data-event-action="Email">info@debbylin.me</a>
           </div>
           <div class="col-md-7 col-sm-12 reveal_bottom mb-4 mb-md-0">
             <h1>Find me on<span class="line"></span></h1>
             <ul class="d-flex">
-              <li><a href="https://dribbble.com/debby" target="_blank" rel="noopener noreferrer">Dribbble</a></li>
-              <li><a href="https://www.instagram.com/debby.design/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-              <li><a href="https://www.behance.net/debby-design" target="_blank" rel="noopener noreferrer">Behance</a></li>
-              <li><a href="https://www.pinterest.com/debby_design" target="_blank" rel="noopener noreferrer">Pinerest</a></li>
-              <li><a href="https://medium.com/debbyxdesign" target="_blank" rel="noopener noreferrer">Medium</a></li>
-              <li><a href="https://www.linkedin.com/in/debbylin1991" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://dribbble.com/debby" target="_blank" rel="noopener noreferrer" data-event-category="Footer" data-event-action="Dribbble">Dribbble</a></li>
+              <li><a href="https://www.instagram.com/debby.design/" target="_blank" rel="noopener noreferrer" data-event-category="Footer" data-event-action="Instagram">Instagram</a></li>
+              <li><a href="https://www.behance.net/debby-design" target="_blank" rel="noopener noreferrer" data-event-category="Footer" data-event-action="Behance">Behance</a></li>
+              <li><a href="https://www.pinterest.com/debby_design" target="_blank" rel="noopener noreferrer" data-event-category="Footer" data-event-action="Pinerest">Pinerest</a></li>
+              <li><a href="https://medium.com/debbyxdesign" target="_blank" rel="noopener noreferrer" data-event-category="Footer" data-event-action="Medium">Medium</a></li>
+              <li><a href="https://www.linkedin.com/in/debbylin1991" target="_blank" rel="noopener noreferrer" data-event-category="Footer" data-event-action="LinkedIn">LinkedIn</a></li>
             </ul>
           </div>
         </div>
@@ -187,5 +194,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <!-- js-->
     <script src="js/all.js"></script>
+    <!-- GTM-->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W7PPMG8" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
   </body>
 </html>

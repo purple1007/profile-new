@@ -6,28 +6,29 @@ footer#footer
         .row
             .col-md-5.col-sm-12.reveal_bottom.mb-5.mb-md-0
                 h1.text-red Let's talk!
-                a.e-mail(href="mailto:info@debbylin.me" target="_blank" rel="noopener noreferrer") info@debbylin.me
+                a.e-mail(href="mailto:info@debbylin.me" target="_blank" rel="noopener noreferrer" data-event-category='Footer' data-event-action='Email') info@debbylin.me
 
             .col-md-7.col-sm-12.reveal_bottom.mb-4.mb-md-0
                 h1 Find me on
                     span.line
                 ul.d-flex
                     li
-                        a(href="https://dribbble.com/debby" target="_blank" rel="noopener noreferrer") Dribbble
+                        a(href="https://dribbble.com/debby" target="_blank" rel="noopener noreferrer" data-event-category='Footer' data-event-action='Dribbble') Dribbble
                     li
-                        a(href="https://www.instagram.com/debby.design/" target="_blank" rel="noopener noreferrer") Instagram
+                        a(href="https://www.instagram.com/debby.design/" target="_blank" rel="noopener noreferrer" data-event-category='Footer' data-event-action='Instagram') Instagram
                     li
-                        a(href="https://www.behance.net/debby-design" target="_blank" rel="noopener noreferrer") Behance
+                        a(href="https://www.behance.net/debby-design" target="_blank" rel="noopener noreferrer" data-event-category='Footer' data-event-action='Behance') Behance
                     li
-                        a(href="https://www.pinterest.com/debby_design" target="_blank" rel="noopener noreferrer") Pinerest
+                        a(href="https://www.pinterest.com/debby_design" target="_blank" rel="noopener noreferrer" data-event-category='Footer' data-event-action='Pinerest') Pinerest
                     li
-                        a(href="https://medium.com/debbyxdesign" target="_blank" rel="noopener noreferrer") Medium
+                        a(href="https://medium.com/debbyxdesign" target="_blank" rel="noopener noreferrer" data-event-category='Footer' data-event-action='Medium') Medium
                     li
-                        a(href="https://www.linkedin.com/in/debbylin1991" target="_blank" rel="noopener noreferrer") LinkedIn
+                        a(href="https://www.linkedin.com/in/debbylin1991" target="_blank" rel="noopener noreferrer" data-event-category='Footer' data-event-action='LinkedIn') LinkedIn
 
         .row
             .col
                 small Copyright © 2020 Debby Lin
+
 
 
 // js-lib
@@ -38,3 +39,7 @@ script(src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js
 
 // js
 script(src='js/all.js')
+
+// GTM
+noscript
+    iframe(src="https://www.googletagmanager.com/ns.html?id=GTM-W7PPMG8" height="0" width="0" style="display:none;visibility:hidden")
