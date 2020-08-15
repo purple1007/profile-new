@@ -10,9 +10,9 @@ section#gallery
                     br
                     p
                         |
-                        a.text-red(href="https://dribbble.com/debby" target="_blank" rel="noopener noreferrer") Here
+                        a.text-red(href="https://dribbble.com/debby" target="_blank" rel="noopener noreferrer" data-event-category='AboutMeText' data-event-action='LearnMore' data-event-label='CheckWorks') Here
                         |  you can check out more of my works and hope you like it!
-                    p If you have any question or just want to talk, welcome to contact me through <a href="#footer" class="text-red">here</a> ! :)
+                    p If you have any question or just want to talk, welcome to contact me through <a href="#footer" class="text-red" data-event-category='AboutMeText' data-event-action='Click' data-event-label='ContactMe'>here</a> ! :)
 
         .row.justify-content-center.reveal_bottom
             .col-12.col-md-10.col-lg-9
@@ -26,11 +26,11 @@ section#gallery
         .row.justify-content-center.reveal_bottom
             .col-12.col-md-10.col-lg-9.d-flex.mt-5
                 .swiper-button
-                    .swiper-prev
+                    .swiper-prev(data-event-category='Gellery' data-event-action='Click' data-event-label='Left')
                         include ../../img/arrow-left.svg
 
-                    .swiper-next
+                    .swiper-next(data-event-category='Gellery' data-event-action='Click' data-event-label='Right')
                         include ../../img/arrow-right.svg
                 .see-more
                     p See more...
-                    a(href="https://dribbble.com/debby" target="_blank" rel="noopener noreferrer") Works on dribbble
+                    a(href="https://dribbble.com/debby" target="_blank" rel="noopener noreferrer" data-event-category='Gellery' data-event-action='Click' data-event-label='Dribbble') Works on dribbble
